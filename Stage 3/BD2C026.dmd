@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BD2C026" id="729B62D1-C597-CDF4-183B-3D7DFFA22ADA" version="3.5">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:15 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>729B62D1-C597-CDF4-183B-3D7DFFA22ADA</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="B0B58A4F-224A-078A-FD1B-2947D355FE2A">
+<designStoragePath>C:\Users\Misha\MISHA\UNIVERSITY\BD2\ETAP12!!</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="1283E1C7-BB3F-05DD-D192-A55E34AB0CCF">
+<designStoragePath>C:\Users\Misha\MISHA\UNIVERSITY\BD2\gggggggg2</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="3E8A2A39-755E-EA65-9BAF-00548975D209">
+<designStoragePath>C:\Users\Misha\Downloads\BD2C111</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="73083969-57CC-937C-6F95-A5F9B4424224">
+<designStoragePath>C:\Users\Misha\MISHA\UNIVERSITY\BD2\Untitled_1</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="BAE492BA-DE56-71B0-4FC4-8FB6B31E3CCF">
+<designStoragePath>C:\Users\Misha\BD2C026</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="6520A939-1029-BABA-3A4F-098425BD2218">
+<designStoragePath>C:\Users\Misha\aaaaaaaaaaa</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="0B467118-295D-86DA-6EDB-5595859F8EAE">
+<designStoragePath>C:\Users\Misha\MISHA\UNIVERSITY\BD2\BD2C026</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="CC1CC902-43F2-0451-22ED-830C6A5162F7">
+<designStoragePath>C:\Users\Misha\BD2C026</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

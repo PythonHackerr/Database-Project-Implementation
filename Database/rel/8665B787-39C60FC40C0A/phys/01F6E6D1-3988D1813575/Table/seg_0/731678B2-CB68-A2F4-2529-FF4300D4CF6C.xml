@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="Odpowiedzi_na_pytanie" directorySegmentName="seg_0" id="731678B2-CB68-A2F4-2529-FF4300D4CF6C">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Id_udzialu" id="A781F691-F357-2625-4B13-CE4682820BB3">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id_odpowiedzi" id="F46CF4E3-8D94-DF12-FCFB-7A27B433EBD4">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ODPPYT_INDEX" id="BA88BBC3-A715-3E99-273F-83C5340DD159">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<synonyms>
+<Synonym class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="Odpowiedzi_na_pytanie" id="93C46AD3-5DF1-8ABC-34FE-D3C56BDDB6F6">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-14 20:16:18 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<objectName>Odpowiedzi_na_pytanie</objectName>
+<objectUser>24CE55A2-7C61-9335-46CD-FF0FDD55EC3B</objectUser>
+<user>2490C11A-10E8-9CB5-1E17-225D41A48AE8</user>
+<referredObjectID>731678B2-CB68-A2F4-2529-FF4300D4CF6C</referredObjectID>
+</Synonym>
+</synonyms>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ODPPYT_ODP_FK" id="E1B9C724-06E5-2CE0-7803-E9006379F3D0">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<deferrable>YES</deferrable>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ODPPYT_UDZ_FK" id="E84B48BE-1F87-EC8B-92DF-1F45E122CED6">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<deferrable>YES</deferrable>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ODPPYT_PK" id="C26371D4-B607-A824-53A6-DE7863733583">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

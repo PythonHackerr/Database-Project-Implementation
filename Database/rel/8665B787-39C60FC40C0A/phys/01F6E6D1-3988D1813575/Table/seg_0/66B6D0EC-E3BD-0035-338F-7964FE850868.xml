@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="Klienci" directorySegmentName="seg_0" id="66B6D0EC-E3BD-0035-338F-7964FE850868">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Ulica" id="21141C4F-869F-DC7E-D45A-91E85C4E6184">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Miasto" id="47A474F2-81AB-EE67-D118-F2089784973B">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nr_domu" id="55248889-EAA9-13E4-43D8-67D4FF819BFF">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Imie" id="884BF589-28E2-D6BD-4903-BED6EC3E887B">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nazwisko" id="9C1D1909-A348-CA73-254B-2FFBA78E1F21">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id_klienta" id="A4CD2017-5F13-40EC-AE7E-E0086B9ED997">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Kod_pocztowy" id="C1E95742-F27D-051B-0C0F-936C16821FE8">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Nr_lokalu" id="D2F8B07A-83D6-B1D1-24F7-8089DC5F7B7F">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Poczta" id="E09B1E9D-F7A8-0707-D244-94037C01C27A">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<synonyms>
+<Synonym class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="Klienci" id="5B0AFBA8-08F6-E2F4-3271-584E34D9F9A9">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-14 14:06:44 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<objectName>Klienci</objectName>
+<objectUser>24CE55A2-7C61-9335-46CD-FF0FDD55EC3B</objectUser>
+<user>2490C11A-10E8-9CB5-1E17-225D41A48AE8</user>
+<referredObjectID>66B6D0EC-E3BD-0035-338F-7964FE850868</referredObjectID>
+</Synonym>
+</synonyms>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="KLT_PK" id="5862EFE6-5CC5-E062-3AF8-CB3ED29EB361">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

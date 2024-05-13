@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="Udzialy_w_ankiecie" directorySegmentName="seg_0" id="2DF14792-C576-86F8-6615-B88BD9074762">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<storeAs>CLOB</storeAs>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="Id_klienta" id="891ACD63-B14A-44F6-BDEB-891EF72802A5">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Id_udzialu" id="CBB9B8BD-625F-01E5-7C25-F7D2AB9E8207">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="Data_wypelnienia" id="CC25247C-6705-3EFC-26CC-B3136E3BB0BF">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="UDZ_FK_INDEX" id="167E5D3D-8CDE-C362-1D83-FD397BA2229A">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<synonyms>
+<Synonym class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SynonymOraclev10g" name="Udzialy_w_ankiecie" id="CF5990D8-15AB-080A-81D8-CB73A885D47C">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-14 20:16:59 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<objectName>Udzialy_w_ankiecie</objectName>
+<objectUser>24CE55A2-7C61-9335-46CD-FF0FDD55EC3B</objectUser>
+<user>2490C11A-10E8-9CB5-1E17-225D41A48AE8</user>
+<referredObjectID>2DF14792-C576-86F8-6615-B88BD9074762</referredObjectID>
+</Synonym>
+</synonyms>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="UDZ_KLT_FK" id="68B1B231-09AF-613A-6D0C-EB9AD16985D3">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<deferrable>YES</deferrable>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="UDZ_PK" id="52137E26-5FF7-6208-F5AF-08FE097E01DD">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 17:15:27 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="Udzialy_w_ankiecie_seq" directorySegmentName="seg_0" id="4C2837F8-1983-C017-44E6-F15B9056C3D3">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-14 20:23:28 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<incrementBy>1</incrementBy>
+<maxValue>999999999</maxValue>
+<minValue>100000001</minValue>
+<startWith>100000001</startWith>
+<user>2490C11A-10E8-9CB5-1E17-225D41A48AE8</user>
+</SequenceOraclev10g>

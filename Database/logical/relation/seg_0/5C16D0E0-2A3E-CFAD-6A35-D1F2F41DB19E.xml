@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="przypozadkuje do_jest przypozadkowana przez" directorySegmentName="seg_0" id="5C16D0E0-2A3E-CFAD-6A35-D1F2F41DB19E">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>8C683C1D-4563-C439-BD5E-0E20F2CF114C</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<targetTransferable>false</targetTransferable>
+<sourcePk>DEA46BD9-D947-9B35-FBF1-F59A607A7FE0</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>przypozadkuje do</nameOnSource>
+<nameOnTarget>jest przypozadkowana przez</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EF4F8D9B-A4F0-21E6-C322-0317A56659F2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3AB7469B-BD52-5895-79D1-BB0A813FC766</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

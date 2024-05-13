@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="Odpowiedzi_seq" directorySegmentName="seg_0" id="A17CFFB0-EF06-64A6-2A98-BC041C3D76A3">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-14 20:22:44 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<incrementBy>1</incrementBy>
+<maxValue>999</maxValue>
+<minValue>101</minValue>
+<startWith>101</startWith>
+<user>2490C11A-10E8-9CB5-1E17-225D41A48AE8</user>
+</SequenceOraclev10g>

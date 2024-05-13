@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA5BF4D9-4571-D30F-9E66-D39E3F370C29" name="Odpowiedzi">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Zawiera konkretne odpowiedzi dane na pytania, z unikatowym identyfikatorem odpowiedzi i jej treścią.]]></commentInRDBMS>
+<generatorID>EF4F8D9B-A4F0-21E6-C322-0317A56659F2</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<abbreviation>ODP</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_odpowiedzi" id="A0662138-0A08-F5B1-4741-43278DF3CEB7">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>57B6BE6B-AC06-50AF-E9AC-DAD67D6F8C54</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_pytania" id="99F46963-5902-5470-45D9-E231BE186DE6">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>6B10A7D2-6BB5-2A57-0F3F-594C9411B2AC</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DC8BBF8F-6CF2-7B1C-C3F8-366895D55C50" referredColumn="0BD6D7A6-7750-E318-9F90-236084883767"/>
+</associations>
+</Column>
+<Column name="Tresc" id="0EE008D0-B9BD-73B0-BAED-3481A207E16E">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>28826975-32AF-AC4B-5E2C-37D3F69C0F1E</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24A16022-FC1D-7A23-5FC9-9D5DE6E555E0" name="ODP_PK">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>DEA46BD9-D947-9B35-FBF1-F59A607A7FE0</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0662138-0A08-F5B1-4741-43278DF3CEB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64DFE0EE-3171-694C-A381-C893F35137B6" name="ODP_UN">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>E00D4AAD-882A-18F8-98A2-380102849222</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EE008D0-B9BD-73B0-BAED-3481A207E16E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D42EB99F-E783-06EA-37CD-CE9CEEFC80A2" name="ODP_FK_INDEX">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-13 14:33:51 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99F46963-5902-5470-45D9-E231BE186DE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E578A09-F0E7-4B7C-6741-7426B7C44B2F" name="ODP_PYT_FK">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>DA6AD1A8-F550-A798-CBA7-EFB6A3C78F9E</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99F46963-5902-5470-45D9-E231BE186DE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

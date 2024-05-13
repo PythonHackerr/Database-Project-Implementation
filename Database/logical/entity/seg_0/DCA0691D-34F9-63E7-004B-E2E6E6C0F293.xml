@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DCA0691D-34F9-63E7-004B-E2E6E6C0F293" name="Pytanie">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Przechowuje pytania zawarte w ankiecie, wskazując ich identyfikator, treść oraz kategorię, do której należą.]]></commentInRDBMS>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>5F2EF501-2717-37B9-82FD-61C2B4F64A71</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Pytania</preferredAbbreviation>
+<shortName>PYT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id pytania" id="228EAA9A-0256-5729-5836-C5F99C123EA4">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>040BC6B7-D16B-54A4-E453-0434517A9E39</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Treść" id="0EC4A6D7-3FD9-7CF9-E17F-8E20510C3A00">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>A8C1E2FE-CD28-8946-B95D-E96563152B31</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1000 CHAR</dataTypeSize>
+<ownDataTypeParameters>1000 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Kategoria" id="3C8C521C-C1C3-0810-D22A-902177CB403B">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Dostępne wartości: R(Sytuacja rodzina), M(materialna), S(styl życia)]]></commentInRDBMS>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>C0A7C0D1-31AA-D9B4-1CAA-3451894D7F82</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="55664F05-2DF8-AE40-3332-BFF377A4DDD4" name="PYT">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>F6DA3FB2-59D0-4CF4-3C9B-178F90128008</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>228EAA9A-0256-5729-5836-C5F99C123EA4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="D2F112D6-31FF-8C1E-FA85-5E0F944706D5" name="TRS">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>5A77E387-C5AE-86F0-9995-5D8DB10917E2</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>0EC4A6D7-3FD9-7CF9-E17F-8E20510C3A00</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

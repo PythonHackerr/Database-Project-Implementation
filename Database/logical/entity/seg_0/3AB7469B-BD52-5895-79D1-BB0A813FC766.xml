@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3AB7469B-BD52-5895-79D1-BB0A813FC766" name="Odpowiedz na pytanie">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Wiąże odpowiedzi udzielone przez klientów z konkretnymi pytaniami w ankiecie. Umożliwia to śledzenie, jakie odpowiedzi zostały udzielone na poszczególne pytania.]]></commentInRDBMS>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>10CE43E5-B5D7-A383-E966-47826214D72A</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<preferredAbbreviation>Odpowiedzi na pytanie</preferredAbbreviation>
+<shortName>ODPPYT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id udziału" id="78F3AAFF-CB44-D953-0AFF-210BC80B26D3">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<generatorID>E9C8B046-D8B3-31CF-6E4E-699357BF1E88</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>034FB6B5-94A1-8680-F034-E73BA24002A5</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<referedAttribute>6583CA54-BA48-639F-097D-EB3FA2113976</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id odpowiedzi" id="6F866E0C-9DC5-5B3E-FD8E-60F7CF44333A">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<generatorID>5C16D0E0-2A3E-CFAD-6A35-D1F2F41DB19E</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>B5A6DC6F-5B99-617F-03D4-9617DA5CBCAA</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<referedAttribute>57B6BE6B-AC06-50AF-E9AC-DAD67D6F8C54</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A7849802-8D68-FD83-1328-F3AAF894B3E2" name="ODPPYT">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>21D2041C-E43E-0A0E-2D00-229415FC71B2</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>78F3AAFF-CB44-D953-0AFF-210BC80B26D3</attributeRef>
+<attributeRef>6F866E0C-9DC5-5B3E-FD8E-60F7CF44333A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

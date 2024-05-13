@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v20c.StorageDesignOraclev20c>
+   <object objectID="24CE55A2-7C61-9335-46CD-FF0FDD55EC3B" markedGenerate="false"/>
+   <object objectID="2490C11A-10E8-9CB5-1E17-225D41A48AE8" markedGenerate="false"/>
+   <object objectID="MDSYS" markedGenerate="false"/>
+   <object objectID="PUBLIC" markedGenerate="false"/>
+   <object objectID="5B0AFBA8-08F6-E2F4-3271-584E34D9F9A9" markedGenerate="false"/>
+   <object objectID="BCE6702C-9227-C32E-99F2-880A23806A41" markedGenerate="false"/>
+   <object objectID="93C46AD3-5DF1-8ABC-34FE-D3C56BDDB6F6" markedGenerate="false"/>
+   <object objectID="CFF1B45D-1BCC-06F4-6091-C655EAF1A5A8" markedGenerate="false"/>
+   <object objectID="CF5990D8-15AB-080A-81D8-CB73A885D47C" markedGenerate="false"/>
+   <object objectID="5862EFE6-5CC5-E062-3AF8-CB3ED29EB361" markedGenerate="false"/>
+   <object objectID="24A16022-FC1D-7A23-5FC9-9D5DE6E555E0" markedGenerate="false"/>
+   <object objectID="64DFE0EE-3171-694C-A381-C893F35137B6" markedGenerate="false"/>
+   <object objectID="D42EB99F-E783-06EA-37CD-CE9CEEFC80A2" markedGenerate="false"/>
+   <object objectID="4E578A09-F0E7-4B7C-6741-7426B7C44B2F" markedGenerate="false"/>
+   <object objectID="C26371D4-B607-A824-53A6-DE7863733583" markedGenerate="false"/>
+   <object objectID="BA88BBC3-A715-3E99-273F-83C5340DD159" markedGenerate="false"/>
+   <object objectID="E1B9C724-06E5-2CE0-7803-E9006379F3D0" markedGenerate="false"/>
+   <object objectID="E84B48BE-1F87-EC8B-92DF-1F45E122CED6" markedGenerate="false"/>
+   <object objectID="A34BAA3F-0BD5-F7E1-2FEF-18B09FDA69A2" markedGenerate="false"/>
+   <object objectID="AC8EE2A4-A174-4552-41F9-76AE8048480C" markedGenerate="false"/>
+   <object objectID="52137E26-5FF7-6208-F5AF-08FE097E01DD" markedGenerate="false"/>
+   <object objectID="167E5D3D-8CDE-C362-1D83-FD397BA2229A" markedGenerate="false"/>
+   <object objectID="68B1B231-09AF-613A-6D0C-EB9AD16985D3" markedGenerate="false"/>
+   <object objectID="66B6D0EC-E3BD-0035-338F-7964FE850868" markedGenerate="false"/>
+   <object objectID="CA5BF4D9-4571-D30F-9E66-D39E3F370C29" markedGenerate="false"/>
+   <object objectID="731678B2-CB68-A2F4-2529-FF4300D4CF6C" markedGenerate="false"/>
+   <object objectID="317122F0-3860-A7D3-0386-4CC61D3656B7" markedGenerate="false"/>
+   <object objectID="2DF14792-C576-86F8-6615-B88BD9074762" markedGenerate="false"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v20c.StorageDesignOraclev20c>

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="udziela_jest udzielana przez" directorySegmentName="seg_0" id="E9C8B046-D8B3-31CF-6E4E-699357BF1E88">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 12:43:37 UTC</createdTime>
+<ownerDesignName>BD2C026</ownerDesignName>
+<importedID>5135B783-5162-C8B9-71BA-AE2DAB146CAA</importedID>
+<engineerTo>
+<item key="4E8A84CD-A5FB-AD46-BA87-5E1365061D39" value="true"/>
+<item key="8665B787-9699-1FB0-1E75-39C60FC40C0A" value="true"/>
+</engineerTo>
+<targetTransferable>false</targetTransferable>
+<sourcePk>3E9297B2-C118-48DC-EAB7-DA7AA8A5BEC1</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>udziela</nameOnSource>
+<nameOnTarget>jest udzielana przez</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FAC18DF2-74F8-0635-A72B-F2187EBF2CC0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3AB7469B-BD52-5895-79D1-BB0A813FC766</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

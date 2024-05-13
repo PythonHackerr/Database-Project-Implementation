@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="66B6D0EC-E3BD-0035-338F-7964FE850868" name="Klienci">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Reprezentuje informacje o osobie biorącej udział w ankiecie, zawiera dane takie jak identyfikator klienta, imię, nazwisko, adres zamieszkania i kod pocztowy.]]></commentInRDBMS>
+<generatorID>2E74586C-B4F2-C525-7A9A-BE8552A933D0</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<abbreviation>KLT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_klienta" id="A4CD2017-5F13-40EC-AE7E-E0086B9ED997">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>B6D30027-0171-4124-1CE7-F1F661E27EC6</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Imie" id="884BF589-28E2-D6BD-4903-BED6EC3E887B">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>DFBFCB47-E114-9BEF-542A-238AF4E7C9A8</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nazwisko" id="9C1D1909-A348-CA73-254B-2FFBA78E1F21">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>E9341A8D-2A6A-34CA-9F89-7F08D06697D1</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Miasto" id="47A474F2-81AB-EE67-D118-F2089784973B">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>A24E88BA-CA8F-1B09-6F3A-36733367013D</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ulica" id="21141C4F-869F-DC7E-D45A-91E85C4E6184">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>B9409B1A-FEB9-3537-CEA4-BAE55D55FE83</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_domu" id="55248889-EAA9-13E4-43D8-67D4FF819BFF">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>8302E4CB-4309-75B0-E904-DF68C6566E3D</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Kod_pocztowy" id="C1E95742-F27D-051B-0C0F-936C16821FE8">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Zakładam, że klienci są z Polski. W Polsce kody pocztowe mają format XX-XXX.]]></commentInRDBMS>
+<generatorID>29392174-AF07-C84F-3078-1F3EA7F50052</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Poczta" id="E09B1E9D-F7A8-0707-D244-94037C01C27A">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>CA053ED6-6EDA-A5E1-41E1-32FC438E02C0</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nr_lokalu" id="D2F8B07A-83D6-B1D1-24F7-8089DC5F7B7F">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>728ADD93-114C-0785-BE76-E78F6E11647F</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5862EFE6-5CC5-E062-3AF8-CB3ED29EB361" name="KLT_PK">
+<createdBy>Misha</createdBy>
+<createdTime>2024-01-07 13:34:05 UTC</createdTime>
+<generatorID>58BB506E-7A48-8BDC-8478-B69BCA5DB675</generatorID>
+<ownerDesignName>BD2C026</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4CD2017-5F13-40EC-AE7E-E0086B9ED997"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,46 @@
+SQL> set echo on
+SQL> set linesize 300
+SQL> set pagesize 500
+SQL> spool BD2C026_DML.LIS
+SQL> 
+SQL> INSERT INTO udzialy_w_ankiecie (id_udzialu, id_klienta, data_wypelnienia) VALUES (111111111, 100014, TO_DATE('2033-02-12', 'YYYY-MM-DD'));
+
+Error starting at line : 6 in command -
+INSERT INTO udzialy_w_ankiecie (id_udzialu, id_klienta, data_wypelnienia) VALUES (111111111, 100014, TO_DATE('2033-02-12', 'YYYY-MM-DD'))
+Error report -
+ORA-00001: unique constraint (BD2C026.UDZ_PK) violated
+
+SQL> 
+SQL> INSERT INTO klienci (id_klienta, imie, nazwisko, miasto, ulica, nr_domu, kod_pocztowy, poczta, nr_lokalu) VALUES (010101, 'Albert', 'Nowak', '?ód?', 'Piotrkowska', '56', '0-18', '?ód?', '10B');
+
+Error starting at line : 8 in command -
+INSERT INTO klienci (id_klienta, imie, nazwisko, miasto, ulica, nr_domu, kod_pocztowy, poczta, nr_lokalu) VALUES (010101, 'Albert', 'Nowak', '?ód?', 'Piotrkowska', '56', '0-18', '?ód?', '10B')
+Error report -
+ORA-02290: check constraint (BD2C026.CHK_KOD_POCZTOWY) violated
+
+SQL> 
+SQL> INSERT INTO klienci (id_klienta, imie, nazwisko, miasto, ulica, nr_domu, kod_pocztowy, poczta, nr_lokalu) VALUES (010102, 'Bob', 'Karol', '?ód?', 'Piotrkowska', '56', '90---8', '?ód?', '10B');
+
+Error starting at line : 10 in command -
+INSERT INTO klienci (id_klienta, imie, nazwisko, miasto, ulica, nr_domu, kod_pocztowy, poczta, nr_lokalu) VALUES (010102, 'Bob', 'Karol', '?ód?', 'Piotrkowska', '56', '90---8', '?ód?', '10B')
+Error report -
+ORA-02290: check constraint (BD2C026.CHK_KOD_POCZTOWY) violated
+
+SQL> 
+SQL> INSERT INTO pytania (id_pytania, tresc, kategoria) VALUES (01, 'Jakie? pytanie', 'L');
+
+Error starting at line : 12 in command -
+INSERT INTO pytania (id_pytania, tresc, kategoria) VALUES (01, 'Jakie? pytanie', 'L')
+Error report -
+ORA-02290: check constraint (BD2C026.PYT_CHK_KATEGORIA) violated
+
+SQL> 
+SQL> INSERT INTO udzialy_w_ankiecie (id_udzialu, id_klienta, data_wypelnienia) VALUES (190004000, 190004, TO_DATE('2023-01-13', 'YYYY-MM-DD'));
+
+Error starting at line : 14 in command -
+INSERT INTO udzialy_w_ankiecie (id_udzialu, id_klienta, data_wypelnienia) VALUES (190004000, 190004, TO_DATE('2023-01-13', 'YYYY-MM-DD'))
+Error report -
+ORA-02291: integrity constraint (BD2C026.UDZ_KLT_FK) violated - parent key not found
+
+SQL> 
+SQL> spool off

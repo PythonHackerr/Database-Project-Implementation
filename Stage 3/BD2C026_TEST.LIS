@@ -1,0 +1,914 @@
+SQL> set linesize 300
+SQL> set pagesize 500
+SQL> spool BD2C026_TEST.LIS
+SQL> 
+SQL> 
+SQL> -- Klienty oraz ich odpowiedzi na wszystkie pytania w ankiecie
+SQL> SELECT k.imie, k.nazwisko, p.tresc AS pytanie, o.tresc AS odpowiedz
+  2  FROM klienci k
+  3  JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+  4  JOIN odpowiedzi_na_pytanie onp ON u.id_udzialu = onp.id_udzialu
+  5  JOIN odpowiedzi o ON onp.id_odpowiedzi = o.id_odpowiedzi
+  6  JOIN pytania p ON o.id_pytania = p.id_pytania;
+
+IMIE                                               NAZWISKO
+-------------------------------------------------- --------------------------------------------------
+PYTANIE
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ODPOWIEDZ                                                                                                                                                                                                                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Piotr                                              Wi?niewski                                         
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Piotr                                              Wi?niewski                                         
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Piotr                                              Wi?niewski                                         
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Magdalena                                          Lewandowska                                        
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+5000 z?                                                                                                                                                                                                                                                                                                     
+
+Magdalena                                          Lewandowska                                        
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Magdalena                                          Lewandowska                                        
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Anna                                               Kowalska                                           
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Anna                                               Kowalska                                           
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Anna                                               Kowalska                                           
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Tomasz                                             Nowak                                              
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Tomasz                                             Nowak                                              
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+3000 z?                                                                                                                                                                                                                                                                                                     
+
+Tomasz                                             Nowak                                              
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Ewa                                                Maj                                                
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Ewa                                                Maj                                                
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Ewa                                                Maj                                                
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Marcin                                             Jab?o?ski                                          
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+5000 z?                                                                                                                                                                                                                                                                                                     
+
+Marcin                                             Jab?o?ski                                          
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Marcin                                             Jab?o?ski                                          
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Agnieszka                                          Kuc                                                
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Agnieszka                                          Kuc                                                
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Agnieszka                                          Kuc                                                
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Krzysztof                                          Olejnik                                            
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Krzysztof                                          Olejnik                                            
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+3000 z?                                                                                                                                                                                                                                                                                                     
+
+Krzysztof                                          Olejnik                                            
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Beata                                              Szyma?ska                                          
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Beata                                              Szyma?ska                                          
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Beata                                              Szyma?ska                                          
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Pawe?                                              D?browski                                          
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Pawe?                                              D?browski                                          
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+7000 z?                                                                                                                                                                                                                                                                                                     
+
+Pawe?                                              D?browski                                          
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Karolina                                           Wi?niewska                                         
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Karolina                                           Wi?niewska                                         
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Karolina                                           Wi?niewska                                         
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Zbigniew                                           Lewicki                                            
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Zbigniew                                           Lewicki                                            
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Zbigniew                                           Lewicki                                            
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Misha                                              Marfenko                                           
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Misha                                              Marfenko                                           
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+3000 z?                                                                                                                                                                                                                                                                                                     
+
+Misha                                              Marfenko                                           
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Bob                                                Brown                                              
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+7000 z?                                                                                                                                                                                                                                                                                                     
+
+Bob                                                Brown                                              
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Bob                                                Brown                                              
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Bob                                                Brown                                              
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+3                                                                                                                                                                                                                                                                                                           
+
+Bob                                                Brown                                              
+Jakie s? imiona Twoich dzieci?                                                                                                                                                                                                                                                                              
+Anna i Jan                                                                                                                                                                                                                                                                                                  
+
+Bob                                                Brown                                              
+Jakie jest Twoje ulubione hobby?                                                                                                                                                                                                                                                                            
+Czytanie ksi??ek                                                                                                                                                                                                                                                                                            
+
+
+45 rows selected. 
+
+SQL> 
+SQL> /
+SQL> -- Wszystkie pytania z ankiet i liczba odpowiedzi na to pytanie
+SQL> SELECT p.tresc AS pytanie, COUNT(onp.id_odpowiedzi) AS liczba_odpowiedzi
+  2  FROM pytania p
+  3  JOIN odpowiedzi o ON p.id_pytania = o.id_pytania
+  4  JOIN odpowiedzi_na_pytanie onp ON o.id_odpowiedzi = onp.id_odpowiedzi
+  5  GROUP BY p.tresc;
+
+PYTANIE
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LICZBA_ODPOWIEDZI
+-----------------
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+               10
+
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+                7
+
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+                4
+
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+               11
+
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+                4
+
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+                7
+
+Jakie jest Twoje ulubione hobby?                                                                                                                                                                                                                                                                            
+                1
+
+Jakie s? imiona Twoich dzieci?                                                                                                                                                                                                                                                                              
+                1
+
+
+8 rows selected. 
+
+SQL> 
+SQL> /
+SQL> -- Liczba udzia?ów wed?ug miast
+SQL> SELECT k.miasto, COUNT(u.id_udzialu) AS liczba_udzialow
+  2  FROM klienty k
+  3  JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+  4  GROUP BY k.miasto;
+
+Error starting at line : 25 in command -
+SELECT k.miasto, COUNT(u.id_udzialu) AS liczba_udzialow
+FROM klienty k
+JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+GROUP BY k.miasto
+Error at Command Line : 26 Column : 6
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> /
+SQL> -- Wszystkie klienty, którzy wzi?li udzia? w ankietach w okre?lonym dniu
+SQL> SELECT k.imie, k.nazwisko, k.miasto, u.data_wypelnienia
+  2  FROM klienty k
+  3  JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+  4  WHERE u.data_wypelnienia = TO_DATE('2023-02-12', 'YYYY-MM-DD');
+
+Error starting at line : 32 in command -
+SELECT k.imie, k.nazwisko, k.miasto, u.data_wypelnienia
+FROM klienty k
+JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+WHERE u.data_wypelnienia = TO_DATE('2023-02-12', 'YYYY-MM-DD')
+Error at Command Line : 33 Column : 6
+Error report -
+SQL Error: ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+SQL> 
+SQL> /
+SQL> 
+SQL> -- Cz?stotliwo?? ka?dej odpowiedzi na konkretne pytanie
+SQL> SELECT o.tresc AS odpowiedz, COUNT(*) AS liczba_wystapien
+  2  FROM odpowiedzi o
+  3  JOIN odpowiedzi_na_pytanie onp ON o.id_odpowiedzi = onp.id_odpowiedzi
+  4  JOIN pytania p ON o.id_pytania = p.id_pytania
+  5  WHERE p.id_pytania = 15
+  6  GROUP BY o.tresc;
+
+ODPOWIEDZ
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LICZBA_WYSTAPIEN
+----------------
+5000 z?                                                                                                                                                                                                                                                                                                     
+               2
+
+7000 z?                                                                                                                                                                                                                                                                                                     
+               2
+
+
+SQL> 
+SQL> spool off
+SQL> set echo on
+SQL> set linesize 300
+SQL> set pagesize 500
+SQL> spool BD2C026_TEST.LIS
+SQL> 
+SQL> 
+SQL> -- Klienty oraz ich odpowiedzi na wszystkie pytania w ankiecie
+SQL> SELECT k.imie, k.nazwisko, p.tresc AS pytanie, o.tresc AS odpowiedz
+  2  FROM klienci k
+  3  JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+  4  JOIN odpowiedzi_na_pytanie onp ON u.id_udzialu = onp.id_udzialu
+  5  JOIN odpowiedzi o ON onp.id_odpowiedzi = o.id_odpowiedzi
+  6  JOIN pytania p ON o.id_pytania = p.id_pytania;
+
+IMIE                                               NAZWISKO
+-------------------------------------------------- --------------------------------------------------
+PYTANIE
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ODPOWIEDZ                                                                                                                                                                                                                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Piotr                                              Wi?niewski                                         
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Piotr                                              Wi?niewski                                         
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Piotr                                              Wi?niewski                                         
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Magdalena                                          Lewandowska                                        
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+5000 z?                                                                                                                                                                                                                                                                                                     
+
+Magdalena                                          Lewandowska                                        
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Magdalena                                          Lewandowska                                        
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Anna                                               Kowalska                                           
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Anna                                               Kowalska                                           
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Anna                                               Kowalska                                           
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Tomasz                                             Nowak                                              
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Tomasz                                             Nowak                                              
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+3000 z?                                                                                                                                                                                                                                                                                                     
+
+Tomasz                                             Nowak                                              
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Ewa                                                Maj                                                
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Ewa                                                Maj                                                
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Ewa                                                Maj                                                
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Marcin                                             Jab?o?ski                                          
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+5000 z?                                                                                                                                                                                                                                                                                                     
+
+Marcin                                             Jab?o?ski                                          
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Marcin                                             Jab?o?ski                                          
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Agnieszka                                          Kuc                                                
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Agnieszka                                          Kuc                                                
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Agnieszka                                          Kuc                                                
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Krzysztof                                          Olejnik                                            
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Krzysztof                                          Olejnik                                            
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+3000 z?                                                                                                                                                                                                                                                                                                     
+
+Krzysztof                                          Olejnik                                            
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Beata                                              Szyma?ska                                          
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Beata                                              Szyma?ska                                          
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Beata                                              Szyma?ska                                          
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Pawe?                                              D?browski                                          
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Pawe?                                              D?browski                                          
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+7000 z?                                                                                                                                                                                                                                                                                                     
+
+Pawe?                                              D?browski                                          
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Karolina                                           Wi?niewska                                         
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Karolina                                           Wi?niewska                                         
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Karolina                                           Wi?niewska                                         
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Zbigniew                                           Lewicki                                            
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Zbigniew                                           Lewicki                                            
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Zbigniew                                           Lewicki                                            
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Misha                                              Marfenko                                           
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Misha                                              Marfenko                                           
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+3000 z?                                                                                                                                                                                                                                                                                                     
+
+Misha                                              Marfenko                                           
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Bob                                                Brown                                              
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+7000 z?                                                                                                                                                                                                                                                                                                     
+
+Bob                                                Brown                                              
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Bob                                                Brown                                              
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Bob                                                Brown                                              
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+3                                                                                                                                                                                                                                                                                                           
+
+Bob                                                Brown                                              
+Jakie s? imiona Twoich dzieci?                                                                                                                                                                                                                                                                              
+Anna i Jan                                                                                                                                                                                                                                                                                                  
+
+Bob                                                Brown                                              
+Jakie jest Twoje ulubione hobby?                                                                                                                                                                                                                                                                            
+Czytanie ksi??ek                                                                                                                                                                                                                                                                                            
+
+
+45 rows selected. 
+
+SQL> 
+SQL> /
+SQL> -- Wszystkie pytania z ankiet i liczba odpowiedzi na to pytanie
+SQL> SELECT p.tresc AS pytanie, COUNT(onp.id_odpowiedzi) AS liczba_odpowiedzi
+  2  FROM pytania p
+  3  JOIN odpowiedzi o ON p.id_pytania = o.id_pytania
+  4  JOIN odpowiedzi_na_pytanie onp ON o.id_odpowiedzi = onp.id_odpowiedzi
+  5  GROUP BY p.tresc;
+
+PYTANIE
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LICZBA_ODPOWIEDZI
+-----------------
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+               10
+
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+                7
+
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+                4
+
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+               11
+
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+                4
+
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+                7
+
+Jakie jest Twoje ulubione hobby?                                                                                                                                                                                                                                                                            
+                1
+
+Jakie s? imiona Twoich dzieci?                                                                                                                                                                                                                                                                              
+                1
+
+
+8 rows selected. 
+
+SQL> 
+SQL> /
+SQL> -- Liczba udzia?ów wed?ug miast
+SQL> SELECT k.miasto, COUNT(u.id_udzialu) AS liczba_udzialow
+  2  FROM klienci k
+  3  JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+  4  GROUP BY k.miasto;
+
+MIASTO                                             LICZBA_UDZIALOW
+-------------------------------------------------- ---------------
+Katowice                                                         2
+Cz?stochowa                                                      1
+Krakow                                                           4
+Lublin                                                           1
+Gdynia                                                           2
+Bydgoszcz                                                        1
+Bia?ystok                                                        2
+Gda?sk                                                           2
+Pozna?                                                           1
+Szczecin                                                         1
+Rzeszów                                                          1
+Wroc?aw                                                          2
+?ód?                                                             1
+
+13 rows selected. 
+
+SQL> 
+SQL> /
+SQL> -- Wszystkie klienty, którzy wzi?li udzia? w ankietach w okre?lonym dniu
+SQL> SELECT k.imie, k.nazwisko, k.miasto, u.data_wypelnienia
+  2  FROM klienci k
+  3  JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+  4  WHERE u.data_wypelnienia = TO_DATE('2023-02-12', 'YYYY-MM-DD');
+
+IMIE                                               NAZWISKO                                           MIASTO                                             DATA_WYPE
+-------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ---------
+Bob                                                Brown                                              Krakow                                             12-FEB-23
+
+SQL> 
+SQL> /
+SQL> 
+SQL> -- Cz?stotliwo?? ka?dej odpowiedzi na konkretne pytanie
+SQL> SELECT o.tresc AS odpowiedz, COUNT(*) AS liczba_wystapien
+  2  FROM odpowiedzi o
+  3  JOIN odpowiedzi_na_pytanie onp ON o.id_odpowiedzi = onp.id_odpowiedzi
+  4  JOIN pytania p ON o.id_pytania = p.id_pytania
+  5  WHERE p.id_pytania = 15
+  6  GROUP BY o.tresc;
+
+ODPOWIEDZ
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LICZBA_WYSTAPIEN
+----------------
+5000 z?                                                                                                                                                                                                                                                                                                     
+               2
+
+7000 z?                                                                                                                                                                                                                                                                                                     
+               2
+
+
+SQL> 
+SQL> spool off
+SQL> set echo on
+SQL> set linesize 300
+SQL> set pagesize 500
+SQL> spool BD2C026_TEST.LIS
+SQL> 
+SQL> 
+SQL> -- Klienty oraz ich odpowiedzi na wszystkie pytania w ankiecie
+SQL> SELECT k.imie, k.nazwisko, p.tresc AS pytanie, o.tresc AS odpowiedz
+  2  FROM klienci k
+  3  JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+  4  JOIN odpowiedzi_na_pytanie onp ON u.id_udzialu = onp.id_udzialu
+  5  JOIN odpowiedzi o ON onp.id_odpowiedzi = o.id_odpowiedzi
+  6  JOIN pytania p ON o.id_pytania = p.id_pytania;
+
+IMIE                                               NAZWISKO
+-------------------------------------------------- --------------------------------------------------
+PYTANIE
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ODPOWIEDZ                                                                                                                                                                                                                                                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Piotr                                              Wi?niewski                                         
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Piotr                                              Wi?niewski                                         
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Piotr                                              Wi?niewski                                         
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Magdalena                                          Lewandowska                                        
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+5000 z?                                                                                                                                                                                                                                                                                                     
+
+Magdalena                                          Lewandowska                                        
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Magdalena                                          Lewandowska                                        
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Anna                                               Kowalska                                           
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Anna                                               Kowalska                                           
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Anna                                               Kowalska                                           
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Tomasz                                             Nowak                                              
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Tomasz                                             Nowak                                              
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+3000 z?                                                                                                                                                                                                                                                                                                     
+
+Tomasz                                             Nowak                                              
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Ewa                                                Maj                                                
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Ewa                                                Maj                                                
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Ewa                                                Maj                                                
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Marcin                                             Jab?o?ski                                          
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+5000 z?                                                                                                                                                                                                                                                                                                     
+
+Marcin                                             Jab?o?ski                                          
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Marcin                                             Jab?o?ski                                          
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Agnieszka                                          Kuc                                                
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Agnieszka                                          Kuc                                                
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Agnieszka                                          Kuc                                                
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Krzysztof                                          Olejnik                                            
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Krzysztof                                          Olejnik                                            
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+3000 z?                                                                                                                                                                                                                                                                                                     
+
+Krzysztof                                          Olejnik                                            
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Beata                                              Szyma?ska                                          
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Beata                                              Szyma?ska                                          
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Beata                                              Szyma?ska                                          
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Pawe?                                              D?browski                                          
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Pawe?                                              D?browski                                          
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+7000 z?                                                                                                                                                                                                                                                                                                     
+
+Pawe?                                              D?browski                                          
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Karolina                                           Wi?niewska                                         
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Karolina                                           Wi?niewska                                         
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+5 lat                                                                                                                                                                                                                                                                                                       
+
+Karolina                                           Wi?niewska                                         
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Zbigniew                                           Lewicki                                            
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Zbigniew                                           Lewicki                                            
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+3 razy w tygodniu                                                                                                                                                                                                                                                                                           
+
+Zbigniew                                           Lewicki                                            
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+Codziennie                                                                                                                                                                                                                                                                                                  
+
+Misha                                              Marfenko                                           
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+2                                                                                                                                                                                                                                                                                                           
+
+Misha                                              Marfenko                                           
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+3000 z?                                                                                                                                                                                                                                                                                                     
+
+Misha                                              Marfenko                                           
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Bob                                                Brown                                              
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+7000 z?                                                                                                                                                                                                                                                                                                     
+
+Bob                                                Brown                                              
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+2000 z?                                                                                                                                                                                                                                                                                                     
+
+Bob                                                Brown                                              
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+Góry                                                                                                                                                                                                                                                                                                        
+
+Bob                                                Brown                                              
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+3                                                                                                                                                                                                                                                                                                           
+
+Bob                                                Brown                                              
+Jakie s? imiona Twoich dzieci?                                                                                                                                                                                                                                                                              
+Anna i Jan                                                                                                                                                                                                                                                                                                  
+
+Bob                                                Brown                                              
+Jakie jest Twoje ulubione hobby?                                                                                                                                                                                                                                                                            
+Czytanie ksi??ek                                                                                                                                                                                                                                                                                            
+
+
+45 rows selected. 
+
+SQL> 
+SQL> /
+SQL> -- Wszystkie pytania z ankiet i liczba odpowiedzi na to pytanie
+SQL> SELECT p.tresc AS pytanie, COUNT(onp.id_odpowiedzi) AS liczba_odpowiedzi
+  2  FROM pytania p
+  3  JOIN odpowiedzi o ON p.id_pytania = o.id_pytania
+  4  JOIN odpowiedzi_na_pytanie onp ON o.id_odpowiedzi = onp.id_odpowiedzi
+  5  GROUP BY p.tresc;
+
+PYTANIE
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LICZBA_ODPOWIEDZI
+-----------------
+Gdzie lubisz podró?owa??                                                                                                                                                                                                                                                                                    
+               10
+
+Ile dzieci masz?                                                                                                                                                                                                                                                                                            
+                7
+
+Ile zarabiasz?                                                                                                                                                                                                                                                                                              
+                4
+
+Jak cz?sto ?wiczysz?                                                                                                                                                                                                                                                                                        
+               11
+
+Jak d?ugo jeste? ?onaty/zam??na?                                                                                                                                                                                                                                                                            
+                4
+
+Jaki jest Twój miesi?czny bud?et?                                                                                                                                                                                                                                                                           
+                7
+
+Jakie jest Twoje ulubione hobby?                                                                                                                                                                                                                                                                            
+                1
+
+Jakie s? imiona Twoich dzieci?                                                                                                                                                                                                                                                                              
+                1
+
+
+8 rows selected. 
+
+SQL> 
+SQL> /
+SQL> -- Liczba udzia?ów wed?ug miast
+SQL> SELECT k.miasto, COUNT(u.id_udzialu) AS liczba_udzialow
+  2  FROM klienci k
+  3  JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+  4  GROUP BY k.miasto;
+
+MIASTO                                             LICZBA_UDZIALOW
+-------------------------------------------------- ---------------
+Katowice                                                         2
+Cz?stochowa                                                      1
+Krakow                                                           4
+Lublin                                                           1
+Gdynia                                                           2
+Bydgoszcz                                                        1
+Bia?ystok                                                        2
+Gda?sk                                                           2
+Pozna?                                                           1
+Szczecin                                                         1
+Rzeszów                                                          1
+Wroc?aw                                                          2
+?ód?                                                             1
+
+13 rows selected. 
+
+SQL> 
+SQL> /
+SQL> -- Wszystkie klienty, którzy wzi?li udzia? w ankietach w okre?lonym dniu
+SQL> SELECT k.imie, k.nazwisko, k.miasto, u.data_wypelnienia
+  2  FROM klienci k
+  3  JOIN udzialy_w_ankiecie u ON k.id_klienta = u.id_klienta
+  4  WHERE u.data_wypelnienia = TO_DATE('2023-02-12', 'YYYY-MM-DD');
+
+IMIE                                               NAZWISKO                                           MIASTO                                             DATA_WYPE
+-------------------------------------------------- -------------------------------------------------- -------------------------------------------------- ---------
+Bob                                                Brown                                              Krakow                                             12-FEB-23
+
+SQL> 
+SQL> /
+SQL> 
+SQL> -- Cz?stotliwo?? ka?dej odpowiedzi na konkretne pytanie
+SQL> SELECT o.tresc AS odpowiedz, COUNT(*) AS liczba_wystapien
+  2  FROM odpowiedzi o
+  3  JOIN odpowiedzi_na_pytanie onp ON o.id_odpowiedzi = onp.id_odpowiedzi
+  4  JOIN pytania p ON o.id_pytania = p.id_pytania
+  5  WHERE p.id_pytania = 15
+  6  GROUP BY o.tresc;
+
+ODPOWIEDZ
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LICZBA_WYSTAPIEN
+----------------
+5000 z?                                                                                                                                                                                                                                                                                                     
+               2
+
+7000 z?                                                                                                                                                                                                                                                                                                     
+               2
+
+
+SQL> 
+SQL> spool off
